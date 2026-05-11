@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fake Media Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>AI Fake Media Detector</h1>
+
+<div class="card">
+    <h2>Image Detection</h2>
+    <input type="file" id="imageInput">
+    <button id="imageBtn">Check Image</button>
+    <p id="imageResult"></p>
+</div>
+
+<div class="card">
+    <h2>Video Detection (CNN-LSTM)</h2>
+    <input type="file" id="videoInput">
+    <button id="videoBtn">Check Video</button>
+    <p id="videoResult"></p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}?v=2"></script>
+</body>
+</html>
